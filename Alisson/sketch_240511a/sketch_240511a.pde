@@ -2,6 +2,7 @@ PImage imageOriginal;
 PImage segmentationObject;
 PImage segmentationContour;
 PImage backgroundRemoved;
+PImage groundtruth;
 
 void setup() {
   size(800, 600);
@@ -47,6 +48,7 @@ void setup() {
       }
     }
   }
+  save("backgroundRemoved.png");
   backgroundRemoved.updatePixels();
 }
 
@@ -54,8 +56,10 @@ void draw() {
   background(255);
   
   // Exibe as imagens
-  image(imageOriginal, 0, 0, width/2, height/2);
-  image(segmentationObject, width/2, 0, width/2, height/2);
-  image(segmentationObject, 0, height/2, width/2, height/2);
-  image(backgroundRemoved, width/2, height/2, width/2, height/2);
+  //image(imageOriginal, 0, 0, width/2, height/2);
+  //image(segmentationObject, width/2, 0, width/2, height/2);
+  //image(segmentationObject, 0, height/2, width/2, height/2);
+  //image(backgroundRemoved, width/2, height/2, width/2, height/2);
+  PImage backgroundRemoved = loadImage("backgroundRemoved.png");
+  calcularMetricas(backgroundRemoved,segmentationObject);
 }
