@@ -17,7 +17,3 @@ Justificativa: Esta etapa é crucial para a segmentação, pois permite separar 
 Preenchimento de Áreas Conectadas (Flood Fill):
 Descrição: O algoritmo de preenchimento de áreas conectadas é utilizado para preencher o objeto segmentado a partir de um ponto interno, garantindo que toda a região do objeto seja identificada de forma completa.
 Justificativa: Este passo é importante para garantir a integridade do objeto segmentado, especialmente em casos onde existem lacunas ou falhas na detecção de bordas, garantindo assim uma segmentação mais precisa.
-
-Remoção de Ruído:
-Descrição: Um algoritmo de remoção de ruído é aplicado para eliminar pequenos objetos ou imperfeições na imagem que não fazem parte do objeto de interesse.
-Justificativa: Esta etapa de pós-processamento é essencial para refinar a segmentação, garantindo que apenas o objeto de interesse seja mantido na imagem final e eliminando componentes indesejados que possam interferir na análise subsequente.
