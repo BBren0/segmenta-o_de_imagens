@@ -1,7 +1,0 @@
-Dificuldade:
-O maior desafio é determinar o limiar de brilho correto para diferenciar efetivamente o avião do fundo. Um limiar inadequado pode resultar em partes do fundo sendo erroneamente mantidas coloridas ou partes do avião sendo transformadas em preto.
-Solução:Experimente com diferentes valores de limiar até encontrar um que funcione bem para a maioria das suas imagens. Isso pode ser feito através de tentativa e erro
-
-
-
-
