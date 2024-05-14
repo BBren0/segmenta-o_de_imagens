@@ -16,6 +16,7 @@ void desenharGrafico(int VP, int FP, int FN, int VN) {
     text("FP", 165, 265);
     text("FN", 265, 265);
     text("VN", 365, 265);
+    save("grafico.png");
 }
 
 
@@ -42,4 +43,6 @@ void calcularMetricas(PImage image, PImage SegmentationObject) {
     println("Verdadeiros Negativos (VN): " + VN);
 
     desenharGrafico(VP, FP, FN, VN);
+    save("grafico2.png");
+    
 }
