@@ -1,0 +1,4 @@
+Verdadeiros Positivos (vp): 672
+Falsos Positivos (fp): 675
+Falsos Negativos (fn): 1953
+Verdadeiros Negativos (vn): 179700
